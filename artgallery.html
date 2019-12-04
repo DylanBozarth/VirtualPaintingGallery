@@ -1,0 +1,37 @@
+<html> 
+<head> 
+<link rel="stylesheet" type="text/css" href="artgallery.css"> 
+</head> 
+<body>  
+  <button class='lined thin'  id="leftbutton" onClick="changeImage()"> Forward </button> 
+<div id="gallery">
+<img class="galleryImage" id="painting1" width= 1200px; height= 570px; src="https://vortotrading.com/wp-content/uploads/2019/02/VisitHeader_960@2x.jpg"></img> 
+  
+  <button id="rightbutton" class='lined thin' onClick="goBack()"> Backward</button>
+
+</body> 
+<script> 
+
+let imageArray = ["https://www.worldatlas.com/r/w728-h425-c728x425/upload/1f/e7/fd/1280px-van-gogh-starry-night-google-art-project.jpg", "https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i6b743a5bd2529b6a/version/1500387064/unmissable-paintings-in-europe-la-clairvoyance-by-magritte.jpg", "https://1.bp.blogspot.com/-TXjauW9fiYc/Tqa1DtNwOwI/AAAAAAAACqs/LsacjFBdijU/s1600/famous_paintings_beautifularts_drawings_art_painting_waterhouse.jpg", "https://1.bp.blogspot.com/-TXjauW9fiYc/Tqa1DtNwOwI/AAAAAAAACqs/LsacjFBdijU/s1600/famous_paintings_beautifularts_drawings_art_painting_waterhouse.jpg", "https://wallpapercave.com/wp/yyZp2gA.jpg", "https://wallpapercave.com/wp/9myB9I9.jpg" ]
+
+let image1 = "https://afremov.com/images/product/image_907.jpeg"
+let DisplayImage = document.getElementById('painting1')
+let imageIndex = 0;
+
+function changeImage() {
+  DisplayImage.setAttribute("src", imageArray[imageIndex]);
+  imageIndex++ 
+  if (imageIndex === 6) {
+  imageIndex = 0
+  }
+}
+function goBack() {
+  DisplayImage.setAttribute("src", imageArray[imageIndex]);
+  imageIndex--
+  if (imageIndex === -1) {
+  imageIndex = 5
+  }
+}
+
+</script> 
+  </html>  

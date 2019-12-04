@@ -1,0 +1,37 @@
+body {
+  background-color: black; 
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.FEYeSWGTMoR6QpmtwkqsFwHaEK%26pid%3DApi&f=1");
+    background-size: 100%;
+  background-repeat: no-repeat; 
+}
+.galleryImage {
+  margin-left: 130px;
+  margin-right: auto;
+  justify-content: center;
+  border-style: solid; 
+  border-color: gold;
+  border-width: 17px;
+  
+}
+#leftbutton {
+   position: relative;
+  top: 25px;
+  right: 15px;
+}
+#rightbutton {
+   position: relative;
+  top: 300px;
+  right: 15px;
+}
+button {
+  align-self:center;
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ob_dYjA_6tr065B3KevdyQHaFj%26pid%3DApi&f=1");
+      margin:0 1rem;
+      transition:all .5s ease;
+      color: black;
+      font-size:1.5rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
